@@ -1,16 +1,18 @@
-# uploadjob
+# File Uploader
 
-A new Flutter project.
+Это мобильное приложение предназначено для загрузки больших файлов на сервер путем их разделения на части. Пользователи могут выбирать файлы из своего устройства и загружать их на сервер частями, что снижает риск сбоев из-за прерывания соединения и позволяет возобновлять загрузку с места остановки. Приложение также отображает прогресс загрузки и список ранее загруженных файлов.
 
-## Getting Started
+## Основные функции
 
-This project is a starting point for a Flutter application.
+- Выбор и загрузка файлов с устройства пользователя.
+- Возможность приостановки и возобновления загрузки.
+- Отображение прогресса загрузки и списка загруженных файлов.
+- Управление сохраненными данными и настройками через Shared Preferences.
 
-A few resources to get you started if this is your first Flutter project:
+## Технологический стек
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- **Flutter**: Используется для создания пользовательского интерфейса и логики приложения.
+- **Dio**: Обеспечивает выполнение HTTP-запросов для загрузки частей файла и взаимодействия с сервером.
+- **File Picker**: Позволяет пользователю выбирать файлы для загрузки из файловой системы устройства.
+- **Path Provider и File System**: Используются для работы с файлами и временным хранением частей файла перед отправкой.
+- **Shared Preferences**: Используется для хранения информации о прогрессе загрузки и состоянии загруженных частей.
